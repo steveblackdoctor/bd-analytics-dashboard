@@ -1,36 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BlackDoctor.com - Editorial Analytics Hub</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Inter',sans-serif;background:#ffffff;color:#1a1a1a;min-height:100vh}#app{display:flex;flex-direction:column;min-height:100vh}.header{display:flex;justify-content:space-between;align-items:center;padding:0 32px;height:72px;background:#ffffff;border-bottom:2px solid #EFB14D}.logo{display:flex;align-items:center;gap:16px}.logo-icon{width:44px;height:44px;background:#EFB14D;border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:#000}.logo h1{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#1a1a1a}.logo h1 span{color:#EFB14D}.logo p{font-size:11px;color:#6b6459;margin-top:2px}.header-right{display:flex;align-items:center;gap:20px}.live-badge{display:flex;align-items:center;gap:7px;border:1px solid #EFB14D;color:#EFB14D;padding:5px 14px;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase}.pulse{width:6px;height:6px;background:#EFB14D;border-radius:50%;animation:p 1.5s infinite}@keyframes p{0%,100%{opacity:1}50%{opacity:.3}}.date{font-size:11px;color:#6b6459}.stats-bar{display:flex;background:#f8f8f6;border-bottom:1px solid #ddd9d0;padding:0 32px}.stat-item{display:flex;flex-direction:column;padding:12px 28px 12px 0;margin-right:28px;border-right:1px solid #ddd9d0}.stat-item:last-child{border-right:none}.stat-label{font-size:9px;color:#6b6459;text-transform:uppercase;letter-spacing:1.2px}.stat-value{font-size:20px;font-weight:700;color:#EFB14D;margin-top:3px;font-family:'Playfair Display',serif}.active-badge{color:#EFB14D!important;font-size:14px!important;font-weight:600!important}.main-content{display:flex;flex:1;overflow:hidden;height:calc(100vh - 118px)}.left-panel{width:55%;padding:24px 28px;overflow-y:auto;border-right:1px solid #ddd9d0}.section-title{font-size:10px;font-weight:600;color:#6b6459;text-transform:uppercase;letter-spacing:2px;margin-bottom:16px;display:flex;align-items:center;gap:8px}.section-title::after{content:'';flex:1;height:1px;background:#ddd9d0}.cards-grid{display:flex;flex-direction:column;gap:8px;margin-bottom:28px}.card{
-</head><body><div id="app">
-<header class="header"><div class="logo"><div class="logo-icon">BD</div><div><h1>Black<span>Doctor</span>.com</h1><p>Editorial Analytics Command Center</p></div></div><div class="header-right"><div class="live-badge"><span class="pulse"></span>Live</div><div class="date" id="dt"></div></div></header>
-<div class="stats-bar"><div class="stat-item"><span class="stat-label">Dashboards</span><span class="stat-value">5</span></div><div class="stat-item"><span class="stat-label">Platforms</span><span class="stat-value">4</span></div><div class="stat-item"><span class="stat-label">Tracking Since</span><span class="stat-value" style="font-size:14px;padding-top:4px">Jan 2025</span></div><div class="stat-item"><span class="stat-label">AI Chat</span><span class="stat-value active-badge">Active</span></div></div>
-<div class="main-content">
-<div class="left-panel">
-<h2 class="section-title">Analytics Platforms</h2>
-<div class="cards-grid">
-<div class="card cp" onclick="ol('https://lookerstudio.google.com/u/0/reporting/a11e8b48-ca2e-42e1-84fd-e78fc098fbfa/page/AesfF')"><div class="ci">&#128640;</div><div class="cc"><h3>Super Duper Dashboard</h3><p>Master overview &middot; All platforms combined</p><span class="ct">Looker Studio</span></div><div class="ca">&rarr;</div></div>
-<div class="card cr" onclick="ol('https://studio.youtube.com/channel/UC9b0NPhd14GZK_xPitUoehA/monetization?d=ycdsd')"><div class="ci">&#9654;&#65039;</div><div class="cc"><h3>YouTube Analytics</h3><p>Channel performance &middot; Monetization data</p><span class="ct">YouTube Studio</span></div><div class="ca">&rarr;</div></div>
-<div class="card cpr" onclick="ol('https://lookerstudio.google.com/u/0/reporting/37bf431b-710a-4004-a577-880ed251b0f2/page/2CH')"><div class="ci">&#127897;&#65039;</div><div class="cc"><h3>Podcast Analytics &mdash; The Pulse</h3><p>Episode performance &middot; Listener insights</p><span class="ct">Looker Studio</span></div><div class="ca">&rarr;</div></div>
-<div class="card cg" onclick="ol('https://lookerstudio.google.com/u/0/reporting/beb217fd-618b-419f-be9a-2a25ac8b59f4/page/k')"><div class="ci">&#128200;</div><div class="cc"><h3>Google Analytics</h3><p>Jan 2026 &ndash; Current &middot; Web traffic &amp; engagement</p><span class="ct">Looker Studio</span></div><div class="ca">&rarr;</div></div>
-<div class="card co" onclick="ol('https://docs.google.com/spreadsheets/d/1mSjsS1GELME3oLbpSNQXZLx9OGmoPv7GObeHc')"><div class="ci">&#128203;</div><div class="cc"><h3>Top 100 Sites by Traffic</h3><p>Jan 2025 &ndash; Present &middot; Competitive intelligence</p><span class="ct">Google Sheets</span></div><div class="ca">&rarr;</div></div>
-<div class="card cgr" onclick="ol('https://docs.google.com/spreadsheets/d/1dM--ju5vO8zo26c9yL95XXxGqrQsecHdrzvWRDPua6Y/edit')"><div class="ci">&#128196;</div><div class="cc"><h3>Daily Analytics Tracker</h3><p>Monitor &middot; All dashboard links &middot; Master sheet</p><span class="ct">Google Sheets</span></div><div class="ca">&rarr;</div></div>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #ffffff; color: #1a1a1a; min-height: 100vh; }
+#app { display: flex; flex-direction: column; min-height: 100vh; }
+.header { display: flex; justify-content: space-between; align-items: center; padding: 0 32px; height: 72px; background: #ffffff; border-bottom: 2px solid #EFB14D; }
+.logo { display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: #000; }
+.logo-icon { width: 44px; height: 44px; background: #EFB14D; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #000; margin-right: 12px; }
+.logo h1 span { color: #EFB14D; }
+.header-right { display: flex; align-items: center; gap: 20px; }
+.live-badge { display: flex; align-items: center; gap: 7px; border: 1px solid #EFB14D; color: #EFB14D; padding: 5px 14px; font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+.pulse { width: 6px; height: 6px; background: #EFB14D; border-radius: 50%; animation: p 1.5s infinite; }
+@keyframes p { 0%, 100% { opacity: 1; } 50% { opacity: .3; } }
+.date { font-size: 11px; color: #6b6459; }
+.stats-bar { display: flex; background: #f8f8f6; border-bottom: 1px solid #ddd9d0; padding: 0 32px; }
+.stat-item { display: flex; flex-direction: column; padding: 12px 28px 12px 0; margin-right: 28px; border-right: 1px solid #ddd9d0; }
+.stat-item:last-child { border-right: none; }
+.stat-label { font-size: 9px; color: #6b6459; text-transform: uppercase; letter-spacing: 1.2px; }
+.stat-value { font-size: 20px; font-weight: 700; color: #EFB14D; margin-top: 3px; font-family: 'Playfair Display', serif; }
+.active-badge { color: #EFB14D !important; font-size: 14px !important; font-weight: 600 !important; }
+.main-content { display: flex; flex: 1; overflow: hidden; height: calc(100vh - 118px); }
+.left-panel { width: 55%; padding: 24px; border-right: 1px solid #ddd9d0; overflow-y: auto; }
+.section-title { font-size: 10px; font-weight: 600; color: #6b6459; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+.section-title::after { content: ''; flex: 1; height: 1px; background: #ddd9d0; }
+.cards-grid { display: flex; flex-direction: column; gap: 8px; margin-bottom: 28px; }
+.card { background: #f8f8f6; border: 1px solid #ddd9d0; padding: 16px 20px; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 16px; }
+.card:hover { border-color: #EFB14D; background: #fffdf7; transform: translateX(4px); }
+.card-icon { font-size: 24px; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: #f0ede8; border: 1px solid #ddd9d0; flex-shrink: 0; }
+.card-content { flex: 1; }
+.card-content h3 { font-family: 'Playfair Display', serif; font-size: 15px; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; }
+.card-content p { font-size: 12px; color: #6b6459; line-height: 1.4; }
+.card-tag { font-size: 9px; color: #9d9488; background: #f0ede8; border: 1px solid #ddd9d0; padding: 3px 8px; text-transform: uppercase; letter-spacing: 1px; white-space: nowrap; }
+.card-arrow { color: #EFB14D; font-size: 18px; }
+.action-btns { display: flex; gap: 8px; flex-wrap: wrap; }
+.btn { padding: 10px 20px; font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; border: none; transition: all 0.2s; font-family: 'Inter', sans-serif; }
+.btn-p { background: #EFB14D; color: #000; }
+.btn-p:hover { background: #d9a03e; }
+.btn-s { background: #000; color: #EFB14D; }
+.btn-s:hover { background: #333; }
+.btn-y { background: #f8f8f6; color: #1a1a1a; border: 1px solid #ddd9d0; }
+.btn-y:hover { border-color: #EFB14D; }
+.right-panel { width: 45%; display: flex; flex-direction: column; }
+.chat-container { display: flex; flex-direction: column; height: 100%; }
+.chat-header { padding: 20px 24px; border-bottom: 1px solid #ddd9d0; background: #f8f8f6; display: flex; align-items: center; gap: 12px; }
+.chat-title { flex: 1; }
+.ai-icon { width: 36px; height: 36px; background: #000; display: flex; align-items: center; justify-content: center; color: #EFB14D; font-size: 14px; font-weight: 700; font-family: 'Playfair Display', serif; }
+.chat-title h3 { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 600; color: #1a1a1a; }
+.chat-title p { font-size: 11px; color: #6b6459; }
+.chat-status { font-size: 9px; color: #EFB14D; background: rgba(239,177,77,0.1); border: 1px solid #EFB14D; padding: 3px 10px; letter-spacing: 1px; text-transform: uppercase; }
+.chat-messages { flex: 1; overflow-y: auto; padding: 20px 24px; display: flex; flex-direction: column; gap: 16px; background: #ffffff; }
+.message { display: flex; gap: 10px; }
+.message.user { flex-direction: row-reverse; }
+.avatar { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; flex-shrink: 0; }
+.avatar.ba { background: #000; color: #EFB14D; }
+.avatar.bu { background: #EFB14D; color: #000; }
+.bubble { max-width: 80%; padding: 12px 16px; font-size: 13px; line-height: 1.6; color: #1a1a1a; }
+.message.bot .bubble { background: #f8f8f6; border: 1px solid #ddd9d0; }
+.message.user .bubble { background: #000; color: #F4F1ED; }
+.bubble a { color: #EFB14D; text-decoration: none; font-weight: 600; }
+.bubble a:hover { text-decoration: underline; }
+.bubble ul { margin: 8px 0 8px 16px; }
+.bubble li { margin-bottom: 4px; }
+.suggestions { padding: 12px 24px; border-top: 1px solid #ddd9d0; background: #f8f8f6; }
+.suggestions p { font-size: 9px; color: #6b6459; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+.chip-container { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { background: #ffffff; border: 1px solid #ddd9d0; color: #1a1a1a; padding: 6px 12px; font-size: 11px; cursor: pointer; font-family: 'Inter', sans-serif; transition: all 0.2s; }
+.chip:hover { border-color: #EFB14D; color: #EFB14D; }
+.chat-input-area { padding: 16px 24px; border-top: 1px solid #ddd9d0; background: #ffffff; }
+.input-row { display: flex; gap: 8px; }
+.chat-input { flex: 1; padding: 12px 16px; font-size: 13px; border: 1px solid #ddd9d0; font-family: 'Inter', sans-serif; color: #1a1a1a; background: #ffffff; outline: none; }
+.chat-input:focus { border-color: #EFB14D; }
+.send-btn { background: #EFB14D; color: #000; border: none; padding: 12px 20px; font-size: 13px; font-weight: 700; cursor: pointer; font-family: 'Inter', sans-serif; transition: background 0.2s; }
+.send-btn:hover { background: #d9a03e; }
+</style>
+</head>
+<body>
+<div id="app">
+  <header class="header">
+    <div class="logo">
+      <div class="logo-icon">BD</div>
+      <div><h1>Black<span>Doctor</span>.com</h1><p style="font-size:11px;color:#6b6459;font-family:'Inter',sans-serif;font-weight:400;margin-top:1px">Editorial Analytics Command Center</p></div>
+    </div>
+    <div class="header-right">
+      <div class="live-badge"><div class="pulse"></div>Live</div>
+      <div class="date" id="dt"></div>
+    </div>
+  </header>
+
+  <div class="stats-bar">
+    <div class="stat-item"><span class="stat-label">Dashboards</span><span class="stat-value">5</span></div>
+    <div class="stat-item"><span class="stat-label">Platforms</span><span class="stat-value">4</span></div>
+    <div class="stat-item"><span class="stat-label">Tracking Since</span><span class="stat-value" style="font-size:14px;padding-top:4px">Jan 2025</span></div>
+    <div class="stat-item"><span class="stat-label">AI Chat</span><span class="stat-value active-badge">Active</span></div>
+  </div>
+
+  <div class="main-content">
+    <div class="left-panel">
+      <h2 class="section-title">Analytics Platforms</h2>
+      <div class="cards-grid">
+
+        <div class="card" onclick="ol('https://lookerstudio.google.com/u/0/reporting/a11e8b48-ca2e-42e1-84fd-e78fc098fbfa/page/AesfF')">
+          <div class="card-icon">&#128640;</div>
+          <div class="card-content">
+            <h3>Super Duper Dashboard</h3>
+            <p>Master overview &middot; All platforms combined</p>
+          </div>
+          <span class="card-tag">Looker Studio</span>
+          <span class="card-arrow">&rarr;</span>
+        </div>
+
+        <div class="card" onclick="ol('https://studio.youtube.com/channel/UC9b0NPhd14GZK_xPitUoehA/monetization?d=ycdsd')">
+          <div class="card-icon">&#9654;&#65039;</div>
+          <div class="card-content">
+            <h3>YouTube Analytics</h3>
+            <p>Channel performance &middot; Monetization data</p>
+          </div>
+          <span class="card-tag">YouTube Studio</span>
+          <span class="card-arrow">&rarr;</span>
+        </div>
+
+        <div class="card" onclick="ol('https://lookerstudio.google.com/u/0/reporting/37bf431b-710a-4004-a577-880ed251b0f2/page/2CH')">
+          <div class="card-icon">&#127897;&#65039;</div>
+          <div class="card-content">
+            <h3>Podcast Analytics &mdash; The Pulse</h3>
+            <p>Episode performance &middot; Listener insights</p>
+          </div>
+          <span class="card-tag">Looker Studio</span>
+          <span class="card-arrow">&rarr;</span>
+        </div>
+
+        <div class="card" onclick="ol('https://lookerstudio.google.com/u/0/reporting/beb217fd-618b-419f-be9a-2a25ac8b59f4/page/k')">
+          <div class="card-icon">&#128200;</div>
+          <div class="card-content">
+            <h3>Google Analytics</h3>
+            <p>Jan 2026 &ndash; Current &middot; Web traffic &amp; engagement</p>
+          </div>
+          <span class="card-tag">Looker Studio</span>
+          <span class="card-arrow">&rarr;</span>
+        </div>
+
+        <div class="card" onclick="ol('https://docs.google.com/spreadsheets/d/1mSjsS1GELME3oLbpSNQXZLx90GmoPv7G0beHc')">
+          <div class="card-icon">&#128203;</div>
+          <div class="card-content">
+            <h3>Top 100 Sites by Traffic</h3>
+            <p>Jan 2025 &ndash; Present &middot; Competitive intelligence</p>
+          </div>
+          <span class="card-tag">Google Sheets</span>
+          <span class="card-arrow">&rarr;</span>
+        </div>
+
+        <div class="card" onclick="ol('https://docs.google.com/spreadsheets/d/1dM--ju5vO8zo26c9yL95XXxGqrQsecHdrzvWRDPua6Y/edit')">
+          <div class="card-icon">&#128196;</div>
+          <div class="card-content">
+            <h3>Daily Analytics Tracker</h3>
+            <p>Monitor &middot; All dashboard links &middot; Master sheet</p>
+          </div>
+          <span class="card-tag">Google Sheets</span>
+          <span class="card-arrow">&rarr;</span>
+        </div>
+
+      </div>
+
+      <h2 class="section-title">Quick Launch</h2>
+      <div class="action-btns">
+        <button class="btn btn-p" onclick="ol('https://lookerstudio.google.com/u/0/reporting/a11e8b48-ca2e-42e1-84fd-e78fc098fbfa/page/AesfF')">Open Master Dashboard</button>
+        <button class="btn btn-s" onclick="ol('https://docs.google.com/spreadsheets/d/1dM--ju5vO8zo26c9yL95XXxGqrQsecHdrzvWRDPua6Y/edit')">Daily Tracker</button>
+        <button class="btn btn-y" onclick="ol('https://studio.youtube.com/channel/UC9b0NPhd14GZK_xPitUoehA/monetization?d=ycdsd')">YouTube Studio</button>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <div class="chat-container">
+        <div class="chat-header">
+          <div class="ai-icon">AI</div>
+          <div class="chat-title">
+            <h3>Analytics AI Assistant</h3>
+            <p>Ask anything about your editorial data</p>
+          </div>
+          <span class="chat-status">Ready</span>
+        </div>
+
+        <div class="chat-messages" id="cm">
+          <div class="message bot">
+            <div class="avatar ba">BD</div>
+            <div class="bubble">
+              <p>Welcome to <strong>BlackDoctor.com</strong> Analytics.</p>
+              <p>I can help analyze performance across your platforms:</p>
+              <ul>
+                <li>&#128640; Super Duper Dashboard</li>
+                <li>&#9654;&#65039; YouTube Analytics</li>
+                <li>&#127897;&#65039; The Pulse &mdash; Podcast</li>
+                <li>&#128200; Google Analytics (Jan 2026+)</li>
+                <li>&#128203; Top 100 Sites by Traffic</li>
+              </ul>
+              <p>What would you like to explore?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="suggestions">
+          <p>Try asking:</p>
+          <div class="chip-container" id="sc">
+            <button class="chip" onclick="ss(this)">How is our YouTube channel performing?</button>
+            <button class="chip" onclick="ss(this)">What metrics should I track daily?</button>
+            <button class="chip" onclick="ss(this)">Explain Google Analytics key metrics?</button>
+            <button class="chip" onclick="ss(this)">How to improve podcast engagement?</button>
+          </div>
+        </div>
+
+        <div class="chat-input-area">
+          <div class="input-row">
+            <input class="chat-input" id="ci" placeholder="Ask about your analytics..." onkeypress="if(event.key==='Enter')sendMsg()">
+            <button class="send-btn" onclick="sendMsg()">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<h2 class="section-title">Quick Launch</h2>
-<div class="action-btns">
-<button class="btn btn-p" onclick="ol('https://lookerstudio.google.com/u/0/reporting/a11e8b48-ca2e-42e1-84fd-e78fc098fbfa/page/AesfF')">Open Master Dashboard</button>
-<button class="btn btn-s" onclick="ol('https://docs.google.com/spreadsheets/d/1dM--ju5vO8zo26c9yL95XXxGqrQsecHdrzvWRDPua6Y/edit')">Daily Tracker</button>
-<button class="btn btn-y" onclick="ol('https://studio.youtube.com/channel/UC9b0NPhd14GZK_xPitUoehA/monetization?d=ycdsd')">YouTube Studio</button>
-</div></div>
-<div class="right-panel"><div class="chat-container">
-<div class="chat-header"><div class="chat-title"><div class="ai-icon">AI</div><div><h3>Analytics AI Assistant</h3><p>Ask anything about your editorial data</p></div></div><div class="chat-status"><span class="pg"></span>Ready</div></div>
-<div class="chat-messages" id="cm2">
-<div class="message bm"><div class="avatar ba">BD</div><div class="bubble"><p>Welcome to <strong>BlackDoctor.com</strong> Analytics.</p><p>I can help analyze performance across your platforms:</p><ul><li>&#128640; Super Duper Dashboard</li><li>&#9654;&#65039; YouTube Analytics</li><li>&#127897;&#65039; The Pulse &mdash; Podcast</li><li>&#128200; Google Analytics (Jan 2026+)</li><li>&#128203; Top 100 Sites by Traffic</li></ul><p>What would you like to explore?</p></div></div>
-<div class="suggestions"><p class="sl">Try asking:</p><div class="sc">
-<button class="chip" onclick="ss(this)">How is our YouTube channel performing?</button>
-<button class="chip" onclick="ss(this)">What metrics should I track daily?</button>
-<button class="chip" onclick="ss(this)">Explain Google Analytics key metrics</button>
-<button class="chip" onclick="ss(this)">How to improve podcast engagement?</button>
+
+<script>
+// Set date
+document.getElementById('dt').textContent = new Date().toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric',year:'numeric'});
+
+// Open link
+function ol(url) { window.open(url, '_blank'); }
+
+// Suggestion chip
+function ss(btn) {
+  document.getElementById('ci').value = btn.textContent;
+  sendMsg();
+}
+
+// Knowledge base
+var kb = {
+  youtube: {
+    k: ['youtube','yt','channel','video','views','subscribers','monetization'],
+    r: function() { return '<p><strong>YouTube Analytics</strong> tracks your channel performance.</p><p>Key metrics to watch:</p><ul><li>Views &amp; Watch Time</li><li>Subscriber growth</li><li>Revenue &amp; CPM</li><li>Click-through rate</li></ul><p><a href="https://studio.youtube.com/channel/UC9b0NPhd14GZK_xPitUoehA/monetization?d=ycdsd" target="_blank">Open YouTube Studio &rarr;</a></p>'; }
+  },
+  podcast: {
+    k: ['podcast','pulse','episode','listen','audio','spotify','apple'],
+    r: function() { return '<p><strong>The Pulse Podcast Analytics</strong> shows your audio content performance.</p><ul><li>Episode downloads &amp; listens</li><li>Listener retention</li><li>Platform distribution</li><li>Geographic reach</li></ul><p><a href="https://lookerstudio.google.com/u/0/reporting/37bf431b-710a-4004-a577-880ed251b0f2/page/2CH" target="_blank">Open Podcast Dashboard &rarr;</a></p>'; }
+  },
+  google: {
+    k: ['google analytics','ga4','traffic','sessions','bounce','pageviews','web'],
+    r: function() { return '<p><strong>Google Analytics</strong> (Jan 2026+) tracks web performance.</p><ul><li>Sessions &amp; Users</li><li>Page views &amp; Bounce rate</li><li>Traffic sources</li><li>Conversion tracking</li></ul><p><a href="https://lookerstudio.google.com/u/0/reporting/beb217fd-618b-419f-be9a-2a25ac8b59f4/page/k" target="_blank">Open GA Dashboard &rarr;</a></p>'; }
+  },
+  top100: {
+    k: ['top 100','competitive','sites','traffic rank','competitors'],
+    r: function() { return '<p><strong>Top 100 Sites by Traffic</strong> provides competitive intelligence since Jan 2025.</p><ul><li>Track competitor rankings</li><li>Identify traffic trends</li><li>Benchmark your performance</li></ul><p><a href="https://docs.google.com/spreadsheets/d/1mSjsS1GELME3oLbpSNQXZLx90GmoPv7G0beHc" target="_blank">Open Top 100 Sheet &rarr;</a></p>'; }
+  },
+  master: {
+    k: ['master','super duper','overview','all platforms','combined','main dashboard'],
+    r: function() { return '<p><strong>Super Duper Dashboard</strong> is your master overview combining all platforms.</p><ul><li>Cross-platform performance</li><li>Editorial KPIs at a glance</li><li>Real-time data refresh</li></ul><p><a href="https://lookerstudio.google.com/u/0/reporting/a11e8b48-ca2e-42e1-84fd-e78fc098fbfa/page/AesfF" target="_blank">Open Master Dashboard &rarr;</a></p>'; }
+  },
+  metrics: {
+    k: ['metric','track','kpi','measure','daily','weekly'],
+    r: function() { return '<p><strong>Key daily metrics for BlackDoctor.com editorial:</strong></p><ul><li>&#128640; <a href="https://lookerstudio.google.com/u/0/reporting/a11e8b48-ca2e-42e1-84fd-e78fc098fbfa/page/AesfF" target="_blank">Master Dashboard</a> &mdash; overall pulse</li><li>&#128200; GA4 Sessions &amp; top pages</li><li>&#9654;&#65039; YouTube: Views &amp; watch time</li><li>&#127897;&#65039; Podcast: New episode downloads</li></ul>'; }
+  },
+  default: {
+    r: function(q) { return '<p>I can help with analytics for <strong>BlackDoctor.com</strong>. Try asking about:</p><ul><li>YouTube channel performance</li><li>Podcast (The Pulse) metrics</li><li>Google Analytics web data</li><li>Competitive intelligence</li><li>Daily metrics to track</li></ul>'; }
+  }
+};
+
+function getReply(q) {
+  var ql = q.toLowerCase();
+  for (var k in kb) {
+    if (k === 'default') continue;
+    if (kb[k].k.some(function(kw) { return ql.indexOf(kw) > -1; })) {
+      return kb[k].r();
+    }
+  }
+  return kb.default.r(q);
+}
+
+function addMsg(html, isUser) {
+  var cm = document.getElementById('cm');
+  var div = document.createElement('div');
+  div.className = 'message ' + (isUser ? 'user' : 'bot');
+  div.innerHTML = '<div class="avatar ' + (isUser ? 'bu' : 'ba') + '">' + (isUser ? 'You' : 'BD') + '</div><div class="bubble">' + html + '</div>';
+  cm.appendChild(div);
+  cm.scrollTop = cm.scrollHeight;
+}
+
+function sendMsg() {
+  var inp = document.getElementById('ci');
+  var q = inp.value.trim();
+  if (!q) return;
+  addMsg('<p>' + q.replace(/</g,'&lt;') + '</p>', true);
+  inp.value = '';
+  setTimeout(function() { addMsg(getReply(q), false); }, 600);
+}
+</script>
+</body>
+</html>
